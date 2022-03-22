@@ -155,8 +155,8 @@ module.exports = {
       {
         groups: [
           'external',
-          'builtin',
           'unknown',
+          'builtin',
           'internal',
           'parent',
           'sibling',

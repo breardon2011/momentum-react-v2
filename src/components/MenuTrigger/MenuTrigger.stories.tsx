@@ -1,10 +1,10 @@
 import React from 'react';
 
+import { Item, Section } from '@react-stately/collections';
+
 import StyleDocs from 'storybook/docs.stories.style.mdx';
 import { DocumentationPage } from 'storybook/helper.stories.docs';
 import { MultiTemplate, Template } from 'storybook/helper.stories.templates';
-
-import { Item, Section } from '@react-stately/collections';
 
 import Avatar from 'components/Avatar';
 import { PresenceType } from 'components/Avatar/Avatar.types';
