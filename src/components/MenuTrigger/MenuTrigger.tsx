@@ -1,18 +1,20 @@
-import React, { FC, ReactElement, useRef, Children, Fragment } from 'react';
 import classnames from 'classnames';
+import React, { FC, ReactElement, useRef, Children, Fragment } from 'react';
+
+import { FocusScope } from '@react-aria/focus';
+import { useKeyboard } from '@react-aria/interactions';
+import { useMenuTrigger } from '@react-aria/menu';
+import { DismissButton, useOverlay } from '@react-aria/overlays';
+import { useMenuTriggerState } from '@react-stately/menu';
+
+import ContentSeparator from 'components/ContentSeparator';
+import Menu, { MenuContext } from 'components/Menu';
+import ModalContainer from 'components/ModalContainer';
+import { verifyTypes } from 'helpers/verifyTypes';
 
 import { DEFAULTS, STYLE } from './MenuTrigger.constants';
 import { Props } from './MenuTrigger.types';
 import './MenuTrigger.style.scss';
-import { useMenuTriggerState } from '@react-stately/menu';
-import { useMenuTrigger } from '@react-aria/menu';
-import Menu, { MenuContext } from '../Menu';
-import { DismissButton, useOverlay } from '@react-aria/overlays';
-import { verifyTypes } from '../../helpers/verifyTypes';
-import { FocusScope } from '@react-aria/focus';
-import ModalContainer from '../ModalContainer';
-import ContentSeparator from '../ContentSeparator';
-import { useKeyboard } from '@react-aria/interactions';
 
 const MenuTrigger: FC<Props> = (props: Props) => {
   const {

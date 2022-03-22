@@ -1,11 +1,14 @@
+import classnames from 'classnames';
 import React, { forwardRef, useRef, FC, RefObject } from 'react';
+
 import { useButton } from '@react-aria/button';
-import FocusRing from '../FocusRing';
+
+import FocusRing from 'components/FocusRing';
 
 import { DEFAULTS, STYLE } from './ButtonHyperlink.constants';
 import { Props } from './ButtonHyperlink.types';
+
 import './ButtonHyperlink.style.scss';
-import classnames from 'classnames';
 
 const ButtonHyperlink: FC<Props> = forwardRef(
   (props: Props, providedRef: RefObject<HTMLButtonElement>) => {

@@ -1,6 +1,8 @@
-import { commonStyles } from '../../storybook/helper.stories.argtypes';
-import { PLACEMENTS } from '../ModalArrow/ModalArrow.constants';
-import { COLORS } from '../ModalContainer/ModalContainer.constants';
+import { commonStyles } from 'storybook/helper.stories.argtypes';
+
+import { PLACEMENTS } from 'components/ModalArrow/ModalArrow.constants';
+import { COLORS } from 'components/ModalContainer/ModalContainer.constants';
+
 import { DEFAULTS } from './Popover.constants';
 
 const popoverArgTypes = {

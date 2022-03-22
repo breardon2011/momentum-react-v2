@@ -1,12 +1,15 @@
 import React from 'react';
+import { act } from 'react-dom/test-utils';
+
 import { Item } from '@react-stately/collections';
 
-import MenuTrigger, { MENU_TRIGGER_CONSTANTS as CONSTANTS } from './';
-import ButtonPill from '../ButtonPill';
-import Menu from '../Menu';
-import { mountAndWait, triggerPress } from '../../../test/utils';
-import { act } from 'react-dom/test-utils';
+import ButtonPill from 'components/ButtonPill';
+import Menu from 'components/Menu';
+
 import { ModalContainer } from '..';
+import { mountAndWait, triggerPress } from '../../../test/utils';
+
+import MenuTrigger, { MENU_TRIGGER_CONSTANTS as CONSTANTS } from './';
 
 describe('<MenuTrigger />', () => {
   const defaultProps = {

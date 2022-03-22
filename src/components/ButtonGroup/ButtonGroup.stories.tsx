@@ -1,16 +1,17 @@
 import React from 'react';
 
-import { MultiTemplate, Template } from '../../storybook/helper.stories.templates';
-import { DocumentationPage } from '../../storybook/helper.stories.docs';
-import StyleDocs from '../../storybook/docs.stories.style.mdx';
+import StyleDocs from 'storybook/docs.stories.style.mdx';
+import { DocumentationPage } from 'storybook/helper.stories.docs';
+import { MultiTemplate, Template } from 'storybook/helper.stories.templates';
 
-import ButtonPill from '../ButtonPill';
-import ButtonCircle from '../ButtonCircle';
-import Icon from '../Icon';
+import ButtonCircle from 'components/ButtonCircle';
+import ButtonPill from 'components/ButtonPill';
+import Icon from 'components/Icon';
 
-import ButtonGroup, { ButtonGroupProps } from './';
 import argTypes from './ButtonGroup.stories.args';
 import Documentation from './ButtonGroup.stories.docs.mdx';
+
+import ButtonGroup, { ButtonGroupProps } from './';
 
 export default {
   title: 'Momentum UI/ButtonGroup',

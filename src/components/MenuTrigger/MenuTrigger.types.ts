@@ -1,6 +1,8 @@
 import { CSSProperties, ReactElement } from 'react';
+
 import { MenuTriggerProps } from '@react-types/menu';
-import { Round } from '../ModalContainer/ModalContainer.types';
+
+import { Round } from 'components/ModalContainer/ModalContainer.types';
 
 export interface Props extends Omit<MenuTriggerProps, 'align' | 'direction' | 'shouldFlip'> {
   children: ReactElement[];

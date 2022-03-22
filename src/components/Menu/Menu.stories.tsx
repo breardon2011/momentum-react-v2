@@ -1,16 +1,20 @@
+import { action } from '@storybook/addon-actions';
 import React from 'react';
-import { MultiTemplate, Template } from '../../storybook/helper.stories.templates';
-import { DocumentationPage } from '../../storybook/helper.stories.docs';
-import StyleDocs from '../../storybook/docs.stories.style.mdx';
+
+import StyleDocs from 'storybook/docs.stories.style.mdx';
+import { DocumentationPage } from 'storybook/helper.stories.docs';
+import { MultiTemplate, Template } from 'storybook/helper.stories.templates';
+
 import { Item, Section } from '@react-stately/collections';
 
-import Menu, { MenuProps } from './';
+import Avatar from 'components/Avatar';
+import { PresenceType } from 'components/Avatar/Avatar.types';
+import Flex from 'components/Flex';
+
 import argTypes from './Menu.stories.args';
 import Documentation from './Menu.stories.docs.mdx';
-import { action } from '@storybook/addon-actions';
-import Flex from '../Flex';
-import Avatar from '../Avatar';
-import { PresenceType } from '../Avatar/Avatar.types';
+
+import Menu, { MenuProps } from './';
 
 export default {
   title: 'Momentum UI/Menu',

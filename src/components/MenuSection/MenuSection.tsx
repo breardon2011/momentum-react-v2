@@ -2,12 +2,14 @@
 
 import React, { ReactElement, useCallback } from 'react';
 
+import { useMenuSection } from '@react-aria/menu';
+
+import ContentSeparator from 'components/ContentSeparator';
+import MenuItem from 'components/MenuItem';
+
 import { STYLE } from './MenuSection.constants';
 import { Props } from './MenuSection.types';
 import './MenuSection.style.scss';
-import MenuItem from '../MenuItem';
-import { useMenuSection } from '@react-aria/menu';
-import ContentSeparator from '../ContentSeparator';
 
 const MenuSection = <T extends object>(props: Props<T>): ReactElement => {
   const { item, state, onAction } = props;

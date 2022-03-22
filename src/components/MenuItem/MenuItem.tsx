@@ -2,15 +2,17 @@
 
 import React, { ReactElement, useContext } from 'react';
 
+import { useMenuItem } from '@react-aria/menu';
+
+import './MenuItem.style.scss';
+
+import Icon from 'components/Icon';
+import ListItemBase from 'components/ListItemBase';
+import ListItemBaseSection from 'components/ListItemBaseSection';
+import { MenuContext, MenuAppearanceContext } from 'components/Menu';
+
 import { STYLE } from './MenuItem.constants';
 import { Props } from './MenuItem.types';
-import './MenuItem.style.scss';
-import ListItemBase from '../ListItemBase';
-import { useMenuItem } from '@react-aria/menu';
-import ListItemBaseSection from '../ListItemBaseSection';
-import Icon from '../Icon';
-import { MenuContext } from '../Menu';
-import { MenuAppearanceContext } from '../Menu/Menu';
 
 const MenuItem = <T extends object>(props: Props<T>): ReactElement => {
   const { item, state, onAction } = props;

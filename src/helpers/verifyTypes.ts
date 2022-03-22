@@ -1,8 +1,9 @@
 import React, { FC, ReactNode } from 'react';
-import ButtonSimple from '../components/ButtonSimple';
-import ButtonCircle from '../components/ButtonCircle';
-import ButtonHyperlink from '../components/ButtonHyperlink';
-import ButtonPill from '../components/ButtonPill';
+
+import ButtonCircle from 'components/ButtonCircle';
+import ButtonHyperlink from 'components/ButtonHyperlink';
+import ButtonPill from 'components/ButtonPill';
+import ButtonSimple from 'components/ButtonSimple';
 
 export const MRv2Buttons = [ButtonPill, ButtonCircle, ButtonSimple, ButtonHyperlink];
 
